@@ -36,11 +36,7 @@ function Clock() {
         <div className="minute-hand" style={minuteHandStyle}></div>
         <div className="second-hand" style={secondHandStyle}></div>
         <div className="center-circle"></div>
-        {[...Array(12)].map((_, index) => (
-          <div
-            key={index}
-            className={`hour-mark mark-${index + 1}`}
-          ></div>
+       
         ))}
         {[...Array(12)].map((_, index) => (
           <div
