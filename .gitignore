@@ -1,0 +1,23 @@
+# Node.js
+node_modules/
+
+# Compiled files
+build/
+dist/
+.next/
+.nuxt/
+.out/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env.local
+.env.development
+.env.production
+
+# Editor specific files
+.vscode/
+.idea/
+.DS_Store

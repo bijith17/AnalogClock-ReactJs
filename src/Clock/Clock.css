@@ -1,0 +1,199 @@
+.analog-clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .analog-clock {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    border: 8px solid #ccc;
+    overflow: hidden;
+  }
+  
+  .hour-hand,
+  .minute-hand,
+  .second-hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    background-color: #333;
+    transform-origin: bottom center;
+  }
+  
+  .hour-hand {
+    width: 8px;
+    height: 90px;
+    border-radius: 8px 8px 0 0;
+    transform: translateX(-50%);
+  }
+  
+  .minute-hand {
+    width: 6px;
+    height: 130px;
+    border-radius: 6px 6px 0 0;
+    transform: translateX(-50%);
+  }
+  
+  .second-hand {
+    width: 2px;
+    height: 140px;
+    background-color: red;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  
+  .center-circle {
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+  }
+  
+  .hour-mark {
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 2px);
+    width: 4px;
+    height: 20px;
+    background-color: #333;
+    transform-origin: bottom center;
+  }
+  
+  .mark-1 {
+    transform: rotate(30deg);
+  }
+  
+  .mark-2 {
+    transform: rotate(60deg);
+  }
+  
+  .mark-3 {
+    transform: rotate(90deg);
+  }
+  
+  .mark-4 {
+    transform: rotate(120deg);
+  }
+  
+  .mark-5 {
+    transform: rotate(150deg);
+  }
+  
+  .mark-6 {
+    transform: rotate(180deg);
+  }
+  
+  .mark-7 {
+    transform: rotate(210deg);
+  }
+  
+  .mark-8 {
+    transform: rotate(240deg);
+  }
+  
+  .mark-9 {
+    transform: rotate(270deg);
+  }
+  
+  .mark-10 {
+    transform: rotate(300deg);
+  }
+  
+  .mark-11 {
+    transform: rotate(330deg);
+  }
+  
+  .mark-12 {
+    transform: rotate(0deg);
+  }
+  
+  .digit {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .digit-1 {
+    top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .digit-2 {
+    top: 10px;
+    right: 2px;
+  }
+  
+  .digit-3 {
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+  
+  .digit-4 {
+    top: calc(100% - 10px);
+    right: 10px;
+  }
+  
+  .digit-5 {
+    bottom: 2px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  
+  .digit-6 {
+    bottom: 10px;
+    left: 10px;
+  }
+  
+  .digit-7 {
+    bottom: 50%;
+    left: 10px;
+    transform: translateY(50%);
+  }
+  
+  .digit-8 {
+    bottom: calc(100% - 10px);
+    left: 10px;
+  }
+  
+  .digit-9 {
+    top: calc(100% - 10px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .digit-10 {
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+  
+  .digit-11 {
+    top: 10px;
+    left: 10px;
+  }
+  
+  .digit-12 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .time-label {
+    margin: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+  }
+  
